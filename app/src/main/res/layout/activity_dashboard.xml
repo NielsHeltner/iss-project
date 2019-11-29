@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.DashboardActivity">
+    tools:context=".view.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/dashboardHeader"
@@ -97,16 +101,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac congue mi. Praesent ultricies massa libero, at tempus turpis placerat ut. Donec eu nisi sed turpis scelerisque bibendum sit amet at urna. Curabitur ac lorem enim. Maecenas maximus enim et diam aliquam, nec placerat dui ullamcorper. Curabitur ornare lobortis velit, accumsan tristique metus gravida ultricies. Integer aliquet quam vel maximus aliquet. Vestibulum commodo eros ac consectetur mattis. Mauris sagittis magna urna, sed convallis turpis varius vitae. Fusce tincidunt, erat eu elementum sagittis, lacus massa accumsan nisi, at aliquet ligula nisi ut felis. Proin gravida felis quis mauris porttitor pretium. Praesent aliquet elit in pretium ultrices."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        <TextView
+            android:id="@+id/fitnessPlan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac congue mi. Praesent ultricies massa libero, at tempus turpis placerat ut. Donec eu nisi sed turpis scelerisque bibendum sit amet at urna. Curabitur ac lorem enim. Maecenas maximus enim et diam aliquam, nec placerat dui ullamcorper. Curabitur ornare lobortis velit, accumsan tristique metus gravida ultricies. Integer aliquet quam vel maximus aliquet. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Nutrition plan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fitnessPlan" />
+
+        <TextView
+            android:id="@+id/nutritionPlan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac congue mi. Praesent ultricies massa libero, at tempus turpis placerat ut. Donec eu nisi sed turpis scelerisque bibendum sit amet at urna. Curabitur ac lorem enim. Maecenas maximus enim et diam aliquam, nec placerat dui ullamcorper. Curabitur ornare lobortis velit, accumsan tristique metus gravida ultricies. Integer aliquet quam vel maximus aliquet. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

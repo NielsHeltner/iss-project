@@ -3,13 +3,8 @@ package dk.sdu.mmmi.iss.behealthy.view;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +29,9 @@ public class DashboardActivity extends AppCompatActivity {
 
         exerciseProviderText.setOnClickListener(v -> Toast.makeText(this, "Opening " + exerciseProvider.getName() + "...", Toast.LENGTH_SHORT).show());
         nutritionProviderText.setOnClickListener(v -> Toast.makeText(this, "Opening " + nutritionProvider.getName() + "...", Toast.LENGTH_SHORT).show());
+
+        findViewById(R.id.fitnessPlan).setOnClickListener(v -> startActivity(new Intent(this, FitnessPlanActivity.class)));
+        findViewById(R.id.nutritionPlan).setOnClickListener(v -> startActivity(new Intent(this, NutritionPlanActivity.class)));
     }
 
 }
