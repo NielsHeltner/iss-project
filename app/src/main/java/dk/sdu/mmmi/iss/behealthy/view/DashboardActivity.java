@@ -32,6 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         findViewById(R.id.fitnessPlan).setOnClickListener(v -> startActivity(new Intent(this, FitnessPlanActivity.class)));
         findViewById(R.id.nutritionPlan).setOnClickListener(v -> startActivity(new Intent(this, NutritionPlanActivity.class)));
+        findViewById(R.id.achievementBtn).setOnClickListener(v -> startActivity(new Intent(this, AchievementActivity.class)));
     }
 
 }
